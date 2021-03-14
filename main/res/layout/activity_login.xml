@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:id="@+id/sv_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/v_LoginTop"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#EABE65"/>
+
+            <View
+                android:id="@+id/v_LoginViewBelowTop"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/ic_wave"/>
+
+            <ImageView
+                android:id="@+id/iv_LoginLogo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-100dp"
+                android:background="@drawable/logo"
+                android:paddingTop="90dp"/>
+
+            <TextView
+                android:id="@+id/tv_LoginCofexLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@android:color/black"
+                android:textSize="40sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_LoginLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/login"
+                android:textColor="@color/lightChocolate"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_LoginUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="15dp"
+                android:background="@drawable/fieldlogin1"
+                android:gravity="center"
+                android:hint="@string/username"
+                android:textColor="@android:color/black" />
+
+
+            <EditText
+                android:id="@+id/et_LoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="15dp"
+                android:background="@drawable/fieldlogin1"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:id="@+id/ll_LoginButtonContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+
+                <Button
+                    android:id="@+id/btn_Login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/lightGray"
+                    android:text="@string/login"/>
+
+                <Button
+                    android:id="@+id/btn_Registration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/lightChocolate"
+                    android:text="@string/register"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

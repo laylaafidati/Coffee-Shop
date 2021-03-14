@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/lightBackground"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_Coffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_CoffeeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/defaultCoffeeNameValue"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/iv_CoffeeImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tv_CoffeeName"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/affogato"/>
+
+        <TextView
+            android:id="@+id/tv_CoffeePriceRp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_CoffeeName"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/iv_CoffeeImage"
+            android:text="@string/rp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_CoffeePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_CoffeeName"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/tv_CoffeePriceRp"
+            android:text="@string/defaultCoffeePriceValue"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_CoffeeQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_CoffeePrice"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@id/iv_CoffeeImage"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_DecreaseQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="countDE"
+                android:text="@string/decrease"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_Quantity"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="@string/defaultIntegerValue"/>
+
+            <Button
+                android:id="@+id/btn_IncreaseQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="countIn"
+                android:text="@string/increase"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

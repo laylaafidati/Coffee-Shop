@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapActivity">
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/sv_CafeMap"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingBottom="10dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ll_CafeMap"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            </LinearLayout>-->
+<!--    </ScrollView>-->
+    <View
+        android:id="@+id/v_CafeTop"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_wave"/>
+
+    <ImageView
+        android:id="@+id/iv_CafeMapIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/ic_baseline_location_on_24"/>
+
+    <TextView
+        android:id="@+id/tv_CafeMapLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/cafeLocation"
+        android:textColor="@color/lightChocolate"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_CafeMapCafeName"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:background="@color/lightChocolate"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/defaultCafeNameValue"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textSize="28sp"-->
+<!--        android:textStyle="bold"/>-->
+
+    <fragment
+        android:id="@+id/fragment_CafeMaps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_CafeMapView"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/ic_launcher_foreground"-->
+<!--        android:backgroundTint="@color/colorPrimary"/>-->
+</LinearLayout>

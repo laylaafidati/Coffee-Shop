@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">COFEX</string>
+
+    <!--Default Application Text-->
+    <string name="cafeNameLabel">Cafe Name</string>
+    <string name="cafeRateLabel">Cafe Rate</string>
+    <string name="cafeAddressLabel">Cafe Address</string>
+    <string name="defaultCafeNameValue">Kopi Kenangan</string>
+    <string name="defaultCafeRateValue">5.0</string>
+    <string name="defaultCafeAddressValue">Bina Nusantara University</string>
+    <string name="defaultCoffeeNameValue">Americano</string>
+    <string name="defaultCoffeePriceValue">50000</string>
+    <string name="defaultDate">01–01–2020</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="rp">Rp.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="defaultIntegerValue">0</string>
+
+    <!--Cafe Detail-->
+    <string name="cafeMenu">Cafe Menu</string>
+    <string name="checkout">Checkout</string>
+
+    <!--Cafe List-->
+    <string name="cafeList">Cafe List</string>
+
+    <!--Change Password-->
+    <string name="changeYourPassword">Change Your Password</string>
+    <string name="currentPassword">Current Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="confirmNewPassword">Confirm New Password</string>
+    <string name="updatePassword">Update Password</string>
+
+    <!--Login-->
+    <string name="login">Login</string>
+
+    <!--Cafe Location-->
+    <string name="cafeLocation">Cafe Location</string>
+
+    <!--Registration-->
+    <string name="createAccount">Create Account</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="agreement">Agree with Terms and Conditions</string>
+
+    <!--Transaction History-->
+    <string name="transactionHistory">Transaction History</string>
+    <string name="deleteAll">Delete All</string>
+
+    <!--Alert Checkout-->
+    <string name="totalTransaction">Total Transaction</string>
+    <string name="totalPriceValue">Total Price Value</string>
+    <string name="checkoutConfirmation">Are you sure want to checkout?</string>
+
+    <!--Alert Delete-->
+    <string name="deleteConfirmation">Are you sure want to delete?</string>
+
+    <!--Recycle View Coffee-->
+    <string name="decrease">-</string>
+    <string name="increase">+</string>
+</resources>

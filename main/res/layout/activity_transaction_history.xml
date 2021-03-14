@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TransactionHistoryActivity">
+
+    <View
+        android:id="@+id/v_TransactionHistoryTop"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_wave"/>
+
+    <ImageView
+        android:id="@+id/iv_TransactionHistoryLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/tv_TransactionHistoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/transactionHistory"
+        android:textColor="@color/lightChocolate"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_DeleteAllTransactionHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="@color/lightChocolate"
+        android:text="@string/deleteAll"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_TransactionHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>
